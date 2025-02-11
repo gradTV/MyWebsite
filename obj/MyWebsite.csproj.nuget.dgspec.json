@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asasi\\.dotnet\\MyWebsite\\MyWebsite.csproj": {}
+    "C:\\Users\\asasi\\.dotnet\\MyWebSite\\MyWebsite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asasi\\.dotnet\\MyWebsite\\MyWebsite.csproj": {
+    "C:\\Users\\asasi\\.dotnet\\MyWebSite\\MyWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asasi\\.dotnet\\MyWebsite\\MyWebsite.csproj",
+        "projectUniqueName": "C:\\Users\\asasi\\.dotnet\\MyWebSite\\MyWebsite.csproj",
         "projectName": "MyWebsite",
-        "projectPath": "C:\\Users\\asasi\\.dotnet\\MyWebsite\\MyWebsite.csproj",
+        "projectPath": "C:\\Users\\asasi\\.dotnet\\MyWebSite\\MyWebsite.csproj",
         "packagesPath": "C:\\Users\\asasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asasi\\.dotnet\\MyWebsite\\obj\\",
+        "outputPath": "C:\\Users\\asasi\\.dotnet\\MyWebSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asasi\\AppData\\Roaming\\NuGet\\NuGet.Config"

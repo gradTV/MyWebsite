@@ -1,4 +1,5 @@
-﻿document.addEventListener('mousemove', (e) => {
+﻿//mouse effect
+document.addEventListener('mousemove', (e) => {
     const particleContainer = document.querySelector('.particle-container');
     const particles = document.createElement('div');
     particles.classList.add('particle');
@@ -6,32 +7,47 @@
     particles.style.top = `${e.pageY - 5}px`;
     particleContainer.appendChild(particles);
 
-    particles.style.backgroundColor = e.target.closest("a") ? "#8000ff": rgb(226, 215, 215);
+    // particles.style.backgroundColor = e.target.closest("a") ? "#8000ff": rgb(226, 215, 215); // style link
 
 
     setTimeout(() => {
         particles.remove();
     }, 1000);
 })
-document.querySelectorAll("a, button, .hover-effect").forEach(el => {
-    el.style.cursor = "none"; // Убираем стандартный курсор
+//Event leave in site
+document.addEventListener("mouseleave", () => {
+    customCursor.style.display = "none"; 
+    document.body.style.cursor = "default";
 });
-/* реакция на круг */
-// document.querySelectorAll("h1, p, a").forEach((element) => {
-//     element.addEventListener("mouseenter", (e) => {
-//         let circle = document.createElement("div");
-//         circle.classList.add("circle-effect");
-//         document.body.appendChild(circle);
+//Event enter on site
+document.addEventListener("mouseenter", () => {
+    customCursor.style.display = "block"; 
+    document.body.style.cursor = "none";
+});
 
-//         const rect = e.target.getBoundingClientRect();
-//         circle.style.left = `${rect.left + rect.width / 2 - 30}px`;
-//         circle.style.top = `${rect.top + rect.height / 2 - 30}px`;
-//         circle.style.opacity = "1";
-//         circle.style.transform = "scale(1.2)";
+//End of standart cursor
+document.querySelectorAll("a, button, .hover-effect").forEach(el => {
+    el.style.cursor = "none";
+});
 
-//         e.target.addEventListener("mouseleave", () => {
-//             circle.style.opacity = "0";
-//             setTimeout(() => circle.remove(), 200);
-//         });
-//     });
-// });
+/* React  */
+document.querySelectorAll("a").forEach((element) => {
+    element.addEventListener("mouseenter", (e) => {
+        let box = document.createElement("div");
+        box.classList.add("box-effect");
+        document.body.appendChild(box);
+
+        const rect = e.target.getBoundingClientRect();
+        box.style.left = `${rect.left + window.scrollX}px`;
+        box.style.top = `${rect.top + window.scrollY}px`;
+        box.style.width = `${rect.width}px`;
+        box.style.height = `${rect.height}px`;
+        box.style.opacity = "1";
+        box.style.transform = "scale(1.1)";
+
+        e.target.addEventListener("mouseleave", () => {
+            box.style.opacity = "0";
+            setTimeout(() => box.remove(), 200);
+        }, { once: true });
+    });
+});

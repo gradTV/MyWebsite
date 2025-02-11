@@ -28,3 +28,4 @@ C:\Users\asasi\.dotnet\MyWebsite\obj\Debug\net8.0\refint\MyWebsite.dll
 C:\Users\asasi\.dotnet\MyWebsite\obj\Debug\net8.0\MyWebsite.pdb
 C:\Users\asasi\.dotnet\MyWebsite\obj\Debug\net8.0\MyWebsite.genruntimeconfig.cache
 C:\Users\asasi\.dotnet\MyWebsite\obj\Debug\net8.0\ref\MyWebsite.dll
+C:\Users\asasi\.dotnet\MyWebSite\obj\Debug\net8.0\MyWebsite.sourcelink.json
