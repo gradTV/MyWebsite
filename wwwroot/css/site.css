@@ -31,6 +31,7 @@ html {
   height: 50px;
   position: absolute;
   right: 0;
+  margin-right: 5vw;
 }
 
 .left-info {
@@ -38,7 +39,7 @@ html {
   align-items: center;
   justify-content: flex-start;
   background: #181815;
-  width: 20vw;
+  width: 15vw;
   height: 50vh;
   position: fixed;
   left: 0;

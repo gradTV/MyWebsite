@@ -5,7 +5,7 @@
         let bubble = document.createElement("div");
         bubble.classList.add("bubble");
 
-        let size = Math.random() * 40 + 20; // Size Bubble
+        let size = Math.random() * 20 + 20; // Size bubble
         let duration = Math.random() * 3 + 2;
         let delay = Math.random() * 2;
 
@@ -22,7 +22,7 @@
         highlight.style.width = `${size}px`;
         highlight.style.height = `${size}px`;
 
-        bubble.appendChild(highlight); // inside the bubble
+        bubble.appendChild(highlight); 
         bubbleContainer.appendChild(bubble);
 
         setTimeout(() => {
